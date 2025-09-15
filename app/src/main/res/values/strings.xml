@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VentaExpressRopa</string>
+    <string name="correo">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="hello_world">Hellow World</string>
+    <string name="login">Login</string>
+    <string name="no_tienes_una_cuenta_registrate">¿No tienes una cuenta? Registrate</string>
+    <string name="confirma_password">Confirma tu contraseña</string>
+    <string name="signed">Registrarse</string>
+    <string name="ya_tienes_cuenta_ingresa">¿Ya tienes una cuenta? Entrar</string>
+</resources>

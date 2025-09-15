@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_orange">#FF6B35</color>
+    <color name="primary_dark">#E55A2B</color>
+    <color name="secondary_blue">#2C3E50</color>
+    <color name="background_light">#F8F9FA</color>
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="button_github">#333333</color>
+    <color name="button_facebook">#1877F2</color>
+    <color name="border_light">#E8E8E8</color>
+</resources>

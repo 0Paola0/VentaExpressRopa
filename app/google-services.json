@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "180847066375",
+    "firebase_url": "https://ventaexpressropa-c97bc-default-rtdb.firebaseio.com",
+    "project_id": "ventaexpressropa-c97bc",
+    "storage_bucket": "ventaexpressropa-c97bc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180847066375:android:f36e0f8581384087be59a2",
+        "android_client_info": {
+          "package_name": "com.example.ventaexpressropa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy4fHsTRoEgIjYRgrWRXMYsvuetMxc9_E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
