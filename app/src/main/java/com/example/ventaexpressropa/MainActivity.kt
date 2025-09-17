@@ -56,11 +56,18 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    btnClientes.setOnClickListener {
-            Log.d("MainActivity", "Botón Clientes presionado")
+        btnClientes.setOnClickListener {
+            Log.d("MainActivity", "Botón Clientes presionado") // Cambiado el Tag para consistencia
             Toast.makeText(this, "Abriendo gestión de clientes...", Toast.LENGTH_SHORT).show()
+
+            // --- INICIO DE LA MODIFICACIÓN ---
+            // Crea un Intent para iniciar GestionClientesActivity
+            val intent = Intent(this, GestionClientesActivity::class.java)
+            startActivity(intent)
+            // --- FIN DE LA MODIFICACIÓN ---
         }
-        
+
+
         btnVentas.setOnClickListener {
             Log.d("MainActivity", "Botón Ventas presionado")
             Toast.makeText(this, "Abriendo gestión de ventas...", Toast.LENGTH_SHORT).show()
