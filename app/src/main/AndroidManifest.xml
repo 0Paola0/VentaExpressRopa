@@ -33,6 +33,11 @@
             android:name=".MainActivity"
             android:exported="false" />
 
+
+
+        <activity android:name=".ProductosActivity" />
+        <activity android:name=".ProductoDetalleActivity" />
+
         <activity android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />

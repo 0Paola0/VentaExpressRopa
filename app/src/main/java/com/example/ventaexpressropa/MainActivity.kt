@@ -41,14 +41,22 @@ class MainActivity : AppCompatActivity() {
         saludoUsuario = findViewById(R.id.saludo_usuario)
         auth = FirebaseAuth.getInstance()
     }
-    
+
     private fun configurarBotones() {
         btnProductos.setOnClickListener {
             Log.d("MainActivity", "Botón Productos presionado")
             Toast.makeText(this, "Abriendo gestión de productos...", Toast.LENGTH_SHORT).show()
+
+            // Abrir la Activity de productos
+            val intent = Intent(this, ProductosActivity::class.java)
+            startActivity(intent)
         }
-        
-        btnClientes.setOnClickListener {
+
+
+
+
+
+    btnClientes.setOnClickListener {
             Log.d("MainActivity", "Botón Clientes presionado")
             Toast.makeText(this, "Abriendo gestión de clientes...", Toast.LENGTH_SHORT).show()
         }
@@ -70,9 +78,11 @@ class MainActivity : AppCompatActivity() {
             Log.d("MainActivity", "Usuario no autenticado")
         }
     }
+
     
     override fun onResume() {
         super.onResume()
         mostrarSaludoUsuario()
     }
+
 }
