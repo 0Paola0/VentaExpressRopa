@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnProductos: Button
     private lateinit var btnClientes: Button
     private lateinit var btnVentas: Button
+    private lateinit var btnHistorialVentas: Button
     private lateinit var saludoUsuario: TextView
     private lateinit var auth: FirebaseAuth
 
@@ -38,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         btnProductos = findViewById(R.id.boton_productos)
         btnClientes = findViewById(R.id.boton_clientes)
         btnVentas = findViewById(R.id.boton_ventas)
+        btnHistorialVentas = findViewById(R.id.boton_historial_ventas)
         saludoUsuario = findViewById(R.id.saludo_usuario)
         auth = FirebaseAuth.getInstance()
     }
@@ -71,6 +73,15 @@ class MainActivity : AppCompatActivity() {
         btnVentas.setOnClickListener {
             Log.d("MainActivity", "Botón Ventas presionado")
             Toast.makeText(this, "Abriendo gestión de ventas...", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, VentasActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnHistorialVentas.setOnClickListener {
+            Log.d("MainActivity", "Botón Historial Ventas presionado")
+            Toast.makeText(this, "Abriendo historial de ventas...", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, HistorialVentasActivity::class.java)
+            startActivity(intent)
         }
     }
     

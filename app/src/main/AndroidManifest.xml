@@ -24,6 +24,7 @@
         <activity
             android:name=".GestionClientesActivity"
             android:exported="false" />
+        <activity android:name=".VentasActivity" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -54,6 +55,8 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity android:name=".VentasActivity" />
+        <activity android:name=".HistorialVentasActivity" />
         <activity android:name=".ProductosActivity" />
         <activity android:name=".ProductoDetalleActivity" />
         <activity
