@@ -1,6 +1,5 @@
 package com.example.ventaexpressropa
 
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -35,12 +34,25 @@ class ProductoAdapter(
         holder.tvPrecio.text = producto.precio
         holder.tvDescripcion.text = producto.descripcion
 
-        // Cargar imagen usando el ID de recurso
-        holder.ivProducto.setImageResource(producto.imageResId)
+        // Cargar imagen desde drawable usando el nombre guardado en producto.imagen
+        val resId = holder.itemView.context.resources.getIdentifier(
+            producto.imagen ?: "",
+            "drawable",
+            holder.itemView.context.packageName
+        )
 
+        if (resId != 0) {
+            holder.ivProducto.setImageResource(resId)
+        } else {
+            holder.ivProducto.setImageResource(R.drawable.ic_launcher_foreground)
+        }
+
+        // Click en el producto
         holder.itemView.setOnClickListener { onClick(producto) }
     }
 
     override fun getItemCount(): Int = productos.size
 }
+
+
 

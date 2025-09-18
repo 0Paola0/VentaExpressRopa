@@ -146,7 +146,7 @@ class VentasActivity : AppCompatActivity() {
                     esperandoCatalogoParaAbrir = false
                     mostrarDialogoAgregarProducto()
                 }
-                // Fallback si no hay nada global: intentar bajo el uid actual
+
                 if (catalogo.isEmpty()) cargarProductosPorUid()
             }
 
@@ -163,7 +163,7 @@ class VentasActivity : AppCompatActivity() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 catalogo.clear()
                 for (p in snapshot.children) {
-                    // El modelo existente Producto tiene precio como String; intentamos parsear
+
                     val marca = p.child("marca").getValue(String::class.java) ?: ""
                     val nombre = p.child("nombre").getValue(String::class.java) ?: ""
                     val precioStr = p.child("precio").getValue(String::class.java) ?: "0"

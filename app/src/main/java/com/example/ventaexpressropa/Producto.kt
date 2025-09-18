@@ -4,9 +4,11 @@ package com.example.ventaexpressropa
 
 
 data class Producto(
-    val marca: String,
-    val nombre: String,
-    val precio: String,
-    val descripcion: String,
-    val imageResId: Int
+    var id: String? = null,
+    var nombre: String? = null,
+    var descripcion: String? = null,
+    var precio: String? = null,
+    var stock: Int = 0,
+    var marca: String? = null,
+    var imagen: String? = null
 )

@@ -122,10 +122,9 @@ class GestionClientesActivity : AppCompatActivity() {
             }
     }
 
-    /**
-     * Coloca un ValueEventListener sobre /usuarios/{uid}/clientes para
-     * mantener actualizada la lista de clientes en el RecyclerView.
-     */
+
+     // ValueEventListener para actualizacion lista clientes en el RecyclerView.
+
     private fun cargarClientesDeFirebase() {
         val uid = auth.currentUser?.uid ?: return
         val ref = database.getReference("usuarios/$uid/clientes")

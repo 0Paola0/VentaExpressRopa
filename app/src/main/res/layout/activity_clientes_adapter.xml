@@ -9,6 +9,7 @@
     tools:context=".ClientesAdapter">
 
     <!-- AÑADIDO: CardView para el item de cliente -->
+
     <androidx.cardview.widget.CardView
         android:id="@+id/card_cliente"
         android:layout_width="0dp"

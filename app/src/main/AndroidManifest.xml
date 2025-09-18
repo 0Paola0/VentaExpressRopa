@@ -49,6 +49,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ProductosActivity" />
+        <activity android:name=".NuevoProductoActivity" />
+        <activity android:name=".EditarProductoActivity" />
         <activity
             android:name=".RegistroActivity"
             android:exported="false" />
